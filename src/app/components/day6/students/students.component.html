@@ -1,0 +1,5 @@
+<div class="container">
+    <div class="row justify-content-evenly">
+        <app-student-item class="col-4" (afterDelete)="refresh()" [studentData] = "s" *ngFor = "let s of students"></app-student-item>
+    </div>
+</div>  

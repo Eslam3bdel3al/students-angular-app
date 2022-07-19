@@ -1,0 +1,17 @@
+<div class="row justify-content-evenly py-3 my-3 shadow-sm bg-dark text-center" style="width: 18rem;"> 
+    <div class="col-12 row bg-dark text-white">
+        <p class="col-6">Id:</p>
+        <div class="col-6">
+            <a class = "text-decoration-none col-6" routerLink="/students/{{studentData.id}}">{{studentData.id}}</a>
+        </div>
+    </div>
+
+    <div class="col-12 row bg-dark text-white">
+        <p class="col-6">Name:</p>
+        <p class="col-6">{{studentData.name}}</p>
+    </div>
+    <button class="col-5 btn btn-outline-light"><a class = "text-decoration-none text-reset" routerLink="/update/{{studentData.id}}">Update</a></button>
+    <button class="col-5 btn btn-outline-danger" (click) = "remove(studentData.id)">Delete</button> 
+</div>
+
+

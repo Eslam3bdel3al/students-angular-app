@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row justify-content-evenly">
+        <div class="card col-4 my-3 shadow-sm bg-light text-center" style="width: 18rem;" *ngFor = "let post of allPosts">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-light">User Id: {{post.userId}}</li>
+              <li class="list-group-item bg-light">Post Id:  <a class = "text-decoration-none" routerLink = "/posts/{{post.id}}">{{post.id}}</a></li>
+              <li class="list-group-item bg-light">{{post.title}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

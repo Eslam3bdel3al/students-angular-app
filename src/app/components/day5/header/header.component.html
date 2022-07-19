@@ -1,0 +1,27 @@
+<style>
+     nav ul li a, .collapse ul li a
+        {
+            text-decoration: none;
+            color: #777;
+        }
+        
+        nav ul li a:hover, .collapse ul li a:hover
+        {
+            color: #fff;
+        }
+       
+        .active{
+            color: white;
+        }
+      
+</style>
+
+<nav class="container-fluid bg-dark">
+    <div class="container">
+        <ul class="row list-unstyled justify-content-evenly mb-0">
+            <li class="col-md-2 py-3"><a [routerLinkActiveOptions]={exact:true} routerLinkActive="active" routerLink="">Posts</a></li>
+            <li class="col-md-2 py-3"><a routerLinkActive="active" routerLink="/about">About</a></li>
+            <li class="col-md-2 py-3"><a routerLinkActive="active" routerLink="/error">Error</a></li>
+        </ul>
+    </div>
+</nav>

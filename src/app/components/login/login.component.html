@@ -1,0 +1,17 @@
+<h2>Students</h2>
+<table *ngIf = "datarecievedParent.length > 0;">
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let s of datarecievedParent; index as i">
+      <td>{{i+1}}</td>
+      <td>{{s.name}}</td>
+      <td>{{s.age}}</td>
+    </tr>
+  </tbody>
+</table>

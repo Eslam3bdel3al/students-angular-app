@@ -1,0 +1,12 @@
+<h2>Registeration</h2>
+<div class="Mydiv">
+  <input type="text" [(ngModel)]="name" placeholder="Name">
+  <input type="text" [(ngModel)]="age" placeholder="Age">
+  <div *ngIf="!Age; else Not20ButBig18" style="background-color: red;">
+    Not Valid
+  </div>
+    <ng-template #Not20ButBig18>
+      Valid
+    </ng-template>
+  <input type="button" value="ADD" (click)="AddNewStudent()">
+</div>

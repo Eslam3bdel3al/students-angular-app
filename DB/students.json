@@ -1,0 +1,46 @@
+{
+  "students": [
+    {
+      "name": "Eslam",
+      "age": "25",
+      "phone": "01005537526",
+      "address": "cairo",
+      "id": 1
+    },
+    {
+      "name": "somaya",
+      "age": "22",
+      "phone": "01105537527",
+      "address": "tala",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "mohamed",
+      "age": 25,
+      "address": "cairo",
+      "phone": "01205537526"
+    },
+    {
+      "name": "esraa",
+      "age": "23",
+      "phone": "01245596989",
+      "address": "tala",
+      "id": 4
+    },
+    {
+      "name": "abdo",
+      "age": "25",
+      "phone": "01148865852",
+      "address": "tanta",
+      "id": 5
+    },
+    {
+      "name": "sara",
+      "age": "30",
+      "phone": "01122552632",
+      "address": "shbeen",
+      "id": 6
+    }
+  ]
+}

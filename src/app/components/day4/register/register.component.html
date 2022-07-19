@@ -1,0 +1,26 @@
+<div class="container">
+    <form  class="row w-50 m-auto mt-2 p-3 bg-light rounded-3 shadow-sm" [formGroup] = "validation" (ngSubmit)="SendData(name.value, age.value,phone.value, address.value)">
+        <h2 class="col-12 text-center text-black-50 mb-4">Student registration</h2>
+        <div class="col-12 mb-3">
+            <label for="exampleInputName" class="form-label">Name</label>
+            <input formControlName="name" name="name" #name type="text" class="form-control" id="exampleInputName" autocomplete="off">
+            <p class="text-danger" *ngIf = "!validation.controls['name'].valid">name is not valid, don't use numbers or any special characters</p>
+        </div>
+        <div class="col-6 mb-3">
+            <label for="exampleInputAge" class="form-label">Age</label>
+            <input formControlName="age" name="age" #age type="text" class="form-control" id="exampleInputAge" autocomplete="off">
+            <p class="text-danger" *ngIf = "!validation.controls['age'].valid">this age is not valid</p>
+        </div>
+        <div class="col-6 mb-3">
+            <label for="exampleInputPhone" class="form-label">Phone</label>
+            <input formControlName="phone" name="phone" #phone type="text" class="form-control" id="exampleInputPhone" autocomplete="off">
+            <p class="text-danger" *ngIf = "!validation.controls['phone'].valid">this phone number is not valid</p>
+        </div>
+        <div class="col-12 mb-3">
+            <label for="exampleInputAddress" class="form-label">Address</label>
+            <input formControlName="address" name="address" #address type="text" class="form-control" id="exampleInputAddress" autocomplete="off">
+        </div>
+        <button type="submit" class="btn btn-primary col-2 ms-3">Submit</button>
+        <button type="reset" class="btn btn-primary col-2 ms-3">Reset</button>
+    </form>
+</div>
